@@ -1,1 +1,40 @@
-{     "devDependencies": {         "mocha-lcov-reporter": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-mocha-lcov-reporter",     "homepage": "https://github.com/npmtest/node-npmtest-mocha-lcov-reporter",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-mocha-lcov-reporter.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [mocha-lcov-reporter (v1.3.0)](https://github.com/StevenLooman/mocha-lcov-reporter#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-mocha-lcov-reporter.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mocha-lcov-reporter) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mocha-lcov-reporter.svg)](https://travis-ci.org/npmtest/node-npmtest-mocha-lcov-reporter)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "mocha-lcov-reporter": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-mocha-lcov-reporter",
+    "keywords": [
+        "coverage",
+        "test",
+        "mocha-lcov-reporter"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_mocha_lcov_reporter.js",
+    "name": "npmtest-mocha-lcov-reporter",
+    "nameAlias": "npmtest_mocha_lcov_reporter",
+    "nameOriginal": "npmtest-mocha-lcov-reporter",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-mocha-lcov-reporter.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
