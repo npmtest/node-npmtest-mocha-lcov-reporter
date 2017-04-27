@@ -1,6 +1,6 @@
 # npmtest-mocha-lcov-reporter
 
-#### test coverage for  [mocha-lcov-reporter (v1.3.0)](https://github.com/StevenLooman/mocha-lcov-reporter#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-mocha-lcov-reporter.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mocha-lcov-reporter) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mocha-lcov-reporter.svg)](https://travis-ci.org/npmtest/node-npmtest-mocha-lcov-reporter)
+#### basic test coverage for  [mocha-lcov-reporter (v1.3.0)](https://github.com/StevenLooman/mocha-lcov-reporter#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-mocha-lcov-reporter.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mocha-lcov-reporter) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mocha-lcov-reporter.svg)](https://travis-ci.org/npmtest/node-npmtest-mocha-lcov-reporter)
 
 #### LCOV reporter for Mocha
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-mocha-lcov-reporter/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-mocha-lcov-reporter/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-mocha-lcov-reporter/build/coverage.html/index.html)
 
@@ -76,7 +76,8 @@
         "url": "git://github.com/StevenLooman/mocha-lcov-reporter.git"
     },
     "scripts": {},
-    "version": "1.3.0"
+    "version": "1.3.0",
+    "bin": {}
 }
 ```
 
